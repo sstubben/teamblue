@@ -1,0 +1,38 @@
+<div id="profile-page">
+<ion-header-bar class="bar-default">
+      <a href="#/home" class="button icon icon-right ion-chevron-left"></a>
+      <div class="h1 title logo"><img src="img/logo-v2.jpg"></div>
+        <button class="button button-icon icon ion-chatbubbles "></button>
+    </ion-header-bar>
+<div ng-controller="CardCtrl">
+    <div class="single-card">
+        <div class="image">
+          <img ng-src="{{selectedItem.image}}">
+          <div class="bottom">
+            <p class="name">{{selectedItem.name}}</p>
+            <div class="right-icons">
+                <!--<button class="button button-icon icon ion-ribbon-a">3</button>-->
+                <button class="button button-icon icon ion-ios-people">140</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="more-info">
+        <h5>About {{selectedItem.name}}</h5>
+        <p ng-bind="selectedItem.title"></p>
+        <p ng-bind="selectedItem.bio"></p>
+        <p ng-bind="selectedItem.email"></p>
+        
+        <h5>Favorite Cars</h5>
+        <p ng-bind="selectedItem.cars"></p>
+        <!--<div class="fav-cars">
+          <img src="img/car1.jpg">
+          <img src="img/car3.jpg">
+          <img src="img/car4.jpg">
+        </div>-->
+
+      </div>
+      
+</div>
+  
+</div>
