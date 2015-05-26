@@ -99,9 +99,9 @@
                     <input id="submit" name="submit" type="submit" value="Submit" class="submit btn btn-primary">
             </div>
             <div class="form-group">
-                <div>
+
                     <?php echo contact(); ?> 
-                </div>
+
             </div>
         </form>
         </div>

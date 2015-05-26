@@ -7,6 +7,7 @@
 			$from = 'TeamBlue'; 
 			$to = 'simon.stubben@lionandlion.com'; 
 			$subject = 'TeamBlue - ';
+			$result = '';
 			
 			$body ="From: $name\n E-Mail: $email\n Message:\n $message";
 			// Check if name has been entered
