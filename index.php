@@ -99,8 +99,8 @@
                     <input id="submit" name="submit" type="submit" value="Submit" class="submit btn btn-primary">
             </div>
             <div class="form-group">
-                <div class="col-sm-10 col-sm-offset-2">
-                    <?php echo $result; ?> 
+                <div>
+                    <?php echo contact(); ?> 
                 </div>
             </div>
         </form>
