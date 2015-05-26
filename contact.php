@@ -3,8 +3,8 @@
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$message = $_POST['message'];
-		$from = 'TeamBlue@teamblue.com'; 
-		$to = 'TeamBlue@teamblue.com'; 
+		$from = 'TeamBlue'; 
+		$to = 'simon.stubben@lionandlion.com'; 
 		$subject = 'TeamBlue - ';
 		
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
