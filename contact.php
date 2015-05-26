@@ -34,6 +34,6 @@
 				}
 			}
 		}
-		return $result
+		return $result;
 	}
 ?>
