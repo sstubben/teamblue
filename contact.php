@@ -9,6 +9,9 @@
 			$from = 'TeamBlue'; 
 			$to = 'simon.stubben@lionandlion.com'; 
 			$subject = 'TeamBlue - ';
+			$errName ='';
+			$errEmail ='';
+			$errMessage ='';
 			
 			$body ="From: $name\n E-Mail: $email\n Message:\n $message";
 			// Check if name has been entered
@@ -27,7 +30,7 @@
 			}
 
 			// If there are no errors, send the email
-			if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+			if ($errName!='' && $errEmail!='' && $errMessage!='') {
 				if (mail ($to, $subject, $body, $from)) {
 					$result='<div class="alert alert-success">Thank You! We will be in touch</div>';
 				} else {
