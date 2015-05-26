@@ -134,11 +134,7 @@
             </div>
             <div class="form-group">
 
-                    <?php 
-
-                    echo contact(); 
-
-                    ?> 
+                    <?php echo $result; ?> 
 
             </div>
         </form>
