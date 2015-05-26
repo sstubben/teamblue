@@ -2,7 +2,7 @@
 	function contact(){
 		$result = '';
 
-		if ($_POST["submit"]) {
+		if ($_POST['name']) {
 			$name = $_POST['name'];
 			$email = $_POST['email'];
 			$message = $_POST['message'];

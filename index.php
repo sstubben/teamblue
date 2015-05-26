@@ -100,7 +100,11 @@
             </div>
             <div class="form-group">
 
-                    <?php echo contact(); ?> 
+                    <?php 
+                        
+                    echo contact(); 
+
+                    ?> 
 
             </div>
         </form>
