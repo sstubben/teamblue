@@ -30,7 +30,7 @@
             } else {
                 $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
             }
-        } else echo '<div>It does not applu</div>'
+        } else echo '<div>It does not applu</div>';
     }
 ?>
 
