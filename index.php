@@ -4,7 +4,7 @@
         $name = $_POST['name'];
         $email = $_POST['email'];
         $message = $_POST['message'];
-        $from = $_POST['email']; 
+        $from = 'simon.stubben@lionandlion.com'; 
         $to = 'simon.stubben@lionandlion.com'; 
         $subject = 'Message from TeamBlue.my ';
         
