@@ -8,7 +8,7 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.zoho.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'team@teamblue.my';                 // SMTP username
+$mail->Username = 'website@teamblue.my';                 // SMTP username
 $mail->Password = '1234qwer';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
@@ -16,7 +16,7 @@ $mail->Port = 587;                                    // TCP port to connect to
 $result ='';
 
 if ($_POST["submit"]) {
-    $mail->From = 'team@teamblue.my';
+    $mail->From = 'website@teamblue.my';
     $mail->FromName = 'TeamBlue';
     $mail->addAddress('team@teamblue.my');     // Add a recipient
     $mail->addReplyTo($_POST['email']);
