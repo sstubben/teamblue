@@ -32,3 +32,24 @@ if(!$mail->send()) {
 }
 
 ?>
+
+
+<?php
+    $result ='';
+    if ($_POST["submit"]) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $from = 'simon.stubben@lionandlion.com'; 
+        $to = 'simon.stubben@lionandlion.com'; 
+        $subject = 'Message from TeamBlue.my ';
+        
+        $body ="From: $name\n E-Mail: $email\n Message:\n $message";
+        
+        if (mail ($to, $subject, $body, $from)) {
+                $result='<div class="alert alert-success">Thank You! We will be in touch</div>';
+        } else {
+                $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+        }
+
+    }
