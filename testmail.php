@@ -15,7 +15,7 @@ $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->From = 'team@teamblue.my';
 $mail->FromName = 'Mailer';
-$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+$mail->addAddress('simon.stubben@lionandlion.com');     // Add a recipient
 $mail->addReplyTo('info@example.com', 'Information');
 
 $mail->isHTML(true);                                  // Set email format to HTML
