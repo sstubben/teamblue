@@ -17,14 +17,14 @@ $result ='';
 
 if ($_POST["submit"]) {
     $mail->From = 'team@teamblue.my';
-    $mail->FromName = 'Mailer';
-    $mail->addAddress('simon.stubben@lionandlion.com');     // Add a recipient
-    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->FromName = 'TeamBlue';
+    $mail->addAddress('team@teamblue.my');     // Add a recipient
+    $mail->addReplyTo($_POST['email']);
 
     $mail->isHTML(true);                                  // Set email format to HTML
 
     $mail->Subject = 'Message from '.$_POST['name'].' to TeamBlue';
-    $mail->Body    = 'From email: '. $_POST['email'].'\n Message: '.$_POST['message'];
+    $mail->Body    = 'From email: '. $_POST['email'].'<br>Message: '.$_POST['message'];
     $mail->AltBody = $_POST['message'];
 
     if(!$mail->send()) {
