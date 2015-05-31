@@ -24,7 +24,7 @@ if ($_POST["submit"]) {
     $mail->isHTML(true);                                  // Set email format to HTML
 
     $mail->Subject = 'Message from '.$_POST['name'].' to TeamBlue';
-    $mail->Body    = 'From email: '. $_POST['email'].'\n Message: '$_POST['message'];
+    $mail->Body    = 'From email: '. $_POST['email'].'\n Message: '.$_POST['message'];
     $mail->AltBody = $_POST['message'];
 
     if(!$mail->send()) {
